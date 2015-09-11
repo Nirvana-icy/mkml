@@ -1,10 +1,11 @@
-'use strict';
+'use strict'
 
+import React from 'react';
 
-module.exports = function () {
-    var element = document.createElement('h1');
-
-    element.innerHTML = 'Hello world';
-
-    return element;
-};
+export default class LoginView extends React.Component {
+  render() {
+    return (
+      <h1>Hello world</h1>
+    );
+  }
+}

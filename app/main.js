@@ -1,5 +1,10 @@
-'use strict';
+'use strict'
 
-var component = require('./loginView.js');
+import React from 'react';
+import LoginView from './loginView.js';
 
-document.body.appendChild(component());
+main();
+
+function main() {
+    React.render(<LoginView />, document.getElementById('app'));
+}
